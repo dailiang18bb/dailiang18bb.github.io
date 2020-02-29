@@ -1,0 +1,194 @@
+Portfolio content
+
+##############################
+Intro
+
+Hello, 
+
+I am Liang Dai, an aspiring software engineer. I'm ready to get my hands dirty, eager to solve real-world challenges.
+
+
+
+Detroit, MI.
+link to github, linkedin, Email
+Get in touch
+
+
+
+##############################
+
+
+##############################
+Backgroud
+
+Hi, I'm Liang Dai. I'm currently an Engineer at TG Automotive Group building applications for the automated production line with some awesome people. I recently graduated from Pace University.
+
+As a software engineer, I enjoy powering our life by combining my technical knowledge with my powerful executive ability to build reliable applications that benefit peoples. I'm a fast learner, passionate about new technology. My goal is to build applications that are scalable and efficient.
+
+Besides coding, I'm fascinated by machines and mechanisms. I have a deep understanding of the automotive by maintaining my and my friends' cars and motorcycles.
+
+
+
+
+##############################
+
+
+
+##############################
+Skills
+
+Languages
+JavaScript(ES6)
+TypeScript
+HTML
+CSS/SCSS
+JAVA
+Python
+C++
+Swift
+XML
+Arduino
+
+
+
+Web & mobile technologies:
+Angular
+Ionic
+Cordova
+Node.js
+REST API
+Tomcat
+Android SDK
+iOS SDK
+PWA
+
+
+Machine Learning: 
+NumPy
+Pandas
+Beautiful Soup
+Tensorflow
+Keras
+Scikit-learn
+NLTK
+OpenCV
+
+
+Tools
+Google Cloud Platform
+Chrome DevTools
+Git & Github
+Bash
+Postman
+Colab
+Jupyter Notebook
+MySQL
+Firebase
+##############################
+
+##############################
+Experience
+
+TG Automotive Group LLC
+Troy, Michigan
+Engineer 
+Aug 2019 - Current
+
+
+Design, develop and implement the GONOGO project, which uses a camera to identify the QR code of the part to determine whether the first part of the production line is correct.
+
+Implemented the OP400 production line image recognition system upgrade, completed 90 PTR parts tests, collected and analyzed 9,000 test data, and determined the final program parameters.
+
+Participated in the technical meeting and quotation meeting of the new beltline project of the Yanfeng Highland Park plant, and proposed a technical support plan.
+
+
+Seidenberg School of Computer Science and Information Systems at Pace University
+New York, NY
+Teaching Assistant for CS641 Mobile Web Content and Development (Angular 7, Ionic 4)             
+Jan 2019 – May 2019
+
+
+Elisabeth Haub School of Law at Pace University
+White Plains, NY
+ITS Student Technician
+Oct 2017 – May 2018
+##############################
+
+
+
+##############################
+project
+
+Personal website
+
+
+GoNoGo
+C++, Qt, Arduino, 
+
+
+
+
+
+
+Math Gun
+HTML Canvas, CSS, JavaScript,
+
+An efficient, mobile and browser friendly Progressive Web Apps, aims to help to plot a line on canvas by the equation. Using HTML5, CSS3, JavaScript, this project is open sourced on GitHub.
+
+
+Explorer
+Ionic, Cordova, Google vision API, WIKI API
+
+A hybrid mobile apps which help explore the world by using Google Vision and Wikipedia API. Coding in Angular 6, building with Ionic 4 and Cordova. Worked on the REST/Web API to create the services and tested on postman and used in AngularJS $HTTP service calls and bind the data in the card.
+
+
+Bridget Riley Drawing
+HTML Canvas, CSS, TypeScript,
+
+A Bridget Riley style drawing web page, Coding in Angular 6, Using native Canvas API. Integrate with device accelerometer, give the drawing a smooth nature movement, while moving the device.
+
+
+
+Deep learning project: Diabetic Retinopathy Detection – Using Tensorflow with Inception-v3 CNN-model, result in 74.8% accuracy.
+
+
+
+EZ Park
+Agile, qTest
+
+
+Android App which helps users find parking spot. The app using Firebase and Google Map API, and maintain on Bitbucket. The project follows the Agile Methodology. My role is the developer in the team, also lead the retrospective meeting at the end of every iteration. Fully involved the whole life cycle of project development.
+
+
+The 4th annual MLH Local Hack Day project: TrunkPool - A web platform which allows the driver to share their car trunk. Honor-Best Presentation Award, Dec 2, 2017 Pace University Pleasantville Campus
+
+
+
+##############################
+
+##############################
+Footer
+
+Developed by Liang Dai @ 2020
+
+
+
+#####
+
+fallback layout
+@supports( display: grid){}
+
+emphasize software development
+
+Put RESUME pdf, open in new tab
+
+
+Put location
+
+run audits
+
+
+
+Write to console
+Hire me! You'll not regret it!
+

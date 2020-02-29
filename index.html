@@ -1,9 +1,608 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme='light'>
+
 <head>
-	<title>Test</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900&display=swap"
+        rel="stylesheet">
+    <meta name="author" content="Liang Dai, ldaicareer@gmail.com">
+    <meta name="description" content="Liang Dai personal website.">
+    <meta name="keywords"
+        content="Liang Dai, software engineer, software developer, development, job, portfolio, personal website">
+    <title>Liang Dai</title>
 </head>
+
 <body>
-    <h1>hello world! I am Liang Dai</h1>
+
+
+    <div class="site">
+        <section class="intro" id="introSection">
+            <div class="intro-container">
+                <div class="intro-first-part">
+                    <div class="intro-greeting-wrapper">
+                        <div class="intro-hello">Hello, <span id="greeting"></span></div>
+                        <div class='switch-button-container'>
+                            <input id='greetingButton' class='switch-button' type='checkbox' name='switch'>
+                        </div>
+
+                    </div>
+
+                    <div class='intro-welcome'>I am
+                        <span class="intro-name prim-text-color">Liang Dai</span>, an aspiring software engineer. I'm ready to get my
+                        hands
+                        dirty, eager to solve real-world challenges.</div>
+                </div>
+
+                <div class="intro-icon-wrapper">
+                    <div class="intro-icon-item">
+                        <svg class="intro-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 8c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm8.94 3c-.46-4.17-3.77-7.48-7.94-7.94V1h-2v2.06C6.83 3.52 3.52 6.83 3.06 11H1v2h2.06c.46 4.17 3.77 7.48 7.94 7.94V23h2v-2.06c4.17-.46 7.48-3.77 7.94-7.94H23v-2h-2.06zM12 19c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z" />
+                        </svg>
+                        Detroit, MI</div>
+                    <a class="intro-icon-item intro-icon-hover" href="mailto:ldaicareer@gmail.com">
+                        <svg class="intro-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                        </svg>
+                        Get in touch
+                    </a>
+                    <a class="intro-icon-item intro-icon-hover" href="https://github.com/dailiang18bb" target="_blank"
+                        title="Github - Liang Dai">
+                            <svg class="intro-icon-svg" role="img" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                            GitHub
+                    </a>
+                    <a class="intro-icon-item intro-icon-hover" href="https://www.linkedin.com/in/liangdaicharles" target="_blank"
+                        title="Linkedin - Liang Dai">
+                            <svg class="intro-icon-svg" role="img" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                            </svg>
+                            Linkedin
+                    </a>
+                    <a class="intro-icon-item intro-icon-hover" href="/docs/Liang Dai Resume V53.pdf" target="_blank"
+                        title="Resume - Liang Dai">
+                        <svg class="intro-icon-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
+                        </svg>
+                        Resume</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="background">
+            <div class="section-title">Backgroud</div>
+            <div class="section-content">
+                <p>Hi, I'm Liang Dai. I'm currently an Engineer at <span class="background-bold prim-text-color">TG Automotive
+                        Group</span> building applications for the
+                    automated production line with some awesome people. I recently graduated from
+                    <span class="background-bold prim-text-color">Pace University</span>.</p>
+                <p>As a software engineer, I enjoy powering our life by combining my technical knowledge with my
+                    powerful
+                    executive ability to build reliable applications that benefit peoples. I'm a fast learner,
+                    passionate
+                    about new technology. My goal is to build applications that are scalable and efficient.</p>
+                <p>Besides coding, I'm fascinated by <span class="background-bold prim-text-color">machines and mechanisms</span>. I
+                    have a deep understanding of the
+                    automotive by maintaining my and my friends' cars and motorcycles.</p>
+            </div>
+
+
+        </section>
+        <section class="skills">
+            <div class="section-title">Skills</div>
+            <div class="section-content skills-container">
+                <div class="skills-list">
+                    <div class="skills-list-label prim-text-color">Languages</div>
+                    <ul class="skills-list-content">
+                        <li>JavaScript(ES6)</li>
+                        <li>TypeScript</li>
+                        <li>HTML</li>
+                        <li>CSS/SCSS</li>
+                        <li>JAVA</li>
+                        <li>Python</li>
+                        <li>C++</li>
+                        <li>Arduino</li>
+                    </ul>
+                </div>
+
+
+                <div class="skills-list">
+                    <div class="skills-list-label prim-text-color">Web & mobile technologies</div>
+                    <ul class="skills-list-content">
+                        <li>Angular</li>
+                        <li>Ionic</li>
+                        <li>Cordova</li>
+                        <li>Node.js</li>
+                        <li>REST API</li>
+                        <li>PWA</li>
+                        <li>Android SDK</li>
+                        <li>iOS SDK</li>
+                    </ul>
+                </div>
+
+
+                <div class="skills-list">
+                    <div class="skills-list-label prim-text-color">Machine Learning</div>
+                    <ul class="skills-list-content">
+                        <li>NumPy</li>
+                        <li>Pandas</li>
+                        <li>Beautiful Soup</li>
+                        <li>Tensorflow</li>
+                        <li>Keras</li>
+                        <li>Scikit-learn</li>
+                        <li>NLTK</li>
+                        <li>OpenCV</li>
+                    </ul>
+                </div>
+
+                <div class="skills-list">
+                    <div class="skills-list-label prim-text-color">Tools</div>
+                    <ul class="skills-list-content">
+                        <li>GCP</li>
+                        <li>Chrome DevTools</li>
+                        <li>Git & Github</li>
+                        <li>Bash</li>
+                        <li>Tomcat</li>
+                        <li>Postman</li>
+                        <li>Google Colab</li>
+                        <li>MySQL</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </section>
+
+
+        <section class="experience">
+            <div class="section-title">Experience</div>
+            <div class="section-content">
+                <div class="job">
+                    <div class="job-place-time">
+                        <div class="job-company prim-text-color">TG Automotive Group LLC</div>
+                        <div>Aug 2019 - Current</div>
+                    </div>
+                    <div class="job-title-location">
+                        <div>Engineer</div>
+                        <div>Troy, MI</div>
+                    </div>
+                    <div class="keywords">
+                        <span class="project-used-item">C++</span>
+                        <span class="project-used-item">Arduino</span>
+                        <span class="project-used-item">OpenCV</span>
+                    </div>
+
+                    <div class="job-description">
+                        <ul>
+                            <li>Base at the SONIMA Corp., working on Engine block assembly automation project.</li>
+                            <li>Design, develop and implement the GONOGO project, which uses a camera to identify the QR
+                                code of the part to determine whether the first part of the production line is correct.
+                            </li>
+                            <li>Implemented the OP400 production line image recognition system upgrade, completed 90 PTR
+                                parts tests, collected and analyzed 9,000 test data, and determined the final program
+                                parameters.</li>
+                            <li>Participated in the technical meeting and quotation meeting of the new beltline project
+                                of the Yanfeng Highland Park plant, and proposed a technical support plan.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-place-time">
+                        <div class="job-company prim-text-color">Pace University</div>
+                        <div>Jan 2019 – May 2019</div>
+                    </div>
+                    <div class="job-title-location">
+                        <div>Teaching Assistant</div>
+                        <div>New York, NY</div>
+                    </div>
+                    <div class="keywords">
+                        <span class="project-used-item">Angular 7</span>
+                        <span class="project-used-item">Ionic 4</span>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Attend the class, troubleshoot and assist the students with their in-class exercise
+                                during the lab session. Weekly assist more than 10 students with their assignments and
+                                questions remotely on
+                                Slack.</li>
+                            <li>Grade and give feedback on 29 students' assignments every week, and summarize students'
+                                common, and comment at the beginning of the next class. </li>
+                            <li>Created and gave a lecture(3h) about the Angular App Architecture, also made the
+                                assignment and quiz on this topic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div class="job-place-time">
+                        <div class="job-company prim-text-color">School of Law at Pace University</div>
+                        <div>Oct 2017 – May 2018</div>
+                    </div>
+                    <div class="job-title-location">
+                        <div>ITS Student Technician</div>
+                        <div>White Plains, NY</div>
+                    </div>
+                    <div class="keywords">
+                        <span class="project-used-item">Bash</span>
+                        <span class="project-used-item">WindowsOS</span>
+                        <span class="project-used-item">MacOS</span>
+                    </div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Assist 10+ users daily by troubleshooting and resolving technical issues on devices.
+                            </li>
+                            <li>Maintain computers across several offices on campus. Reimage Windows and Mac OS, write
+                                scripts to configure the OS.</li>
+                            <li>Supervised 2 new student staff, guide them towards professional.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="project">
+            <div class="section-title">projects</div>
+            <div class="section-content">
+                <div class="project-item-with-img">
+                    <figure class="project-figure">
+                        <img class="project-img" src="/img/project/Math-Gun-demo.png" alt="Math-Gun-Screen">
+                    </figure>
+                    <figcaption class="project-figure-caption">
+                        <div class="project-title-row">
+                            <div class="project-name prim-text-color">Math Gun</div>
+                            <div>
+                                <a href="https://github.com/dailiang18bb/Math-gun" target="_blank" class="button-code">
+                                    <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub icon</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                    <div class="project-img-button-text">Code</div>
+                                </a>
+                                <a href="https://dailiang18bb.github.io/Math-gun/" target="_blank" class="button-code">
+                                    <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                                    </svg>
+                                    <div class="project-img-button-text">Demo</div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div>An efficient, mobile and browser friendly Progressive Web Apps, aims to plot a line on
+                            canvas by the math equation. Help to understand the slope and Y Intercept.</div>
+                        <span class="project-used-item">HTML Canvas</span>
+                        <span class="project-used-item">CSS</span>
+                        <span class="project-used-item">JavaScript</span>
+                        <span class="project-used-item">PWA</span>
+                    </figcaption>
+                </div>
+
+                <div class="project-item-with-img">
+                    <figure class="project-figure">
+                        <img class="project-img" src="/img/project/Explorer-demo.png" alt="Explorer-demo">
+                    </figure>
+                    <figcaption class="project-figure-caption">
+                        <div class="project-title-row">
+                            <div class="project-name prim-text-color">Explorer</div>
+                            <div>
+                                <a href="https://github.com/dailiang18bb/Explorer-Ionic" target="_blank"
+                                    class="button-code">
+                                    <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub icon</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                    <div class="project-img-button-text">Code</div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div>A hybrid mobile app that helps explore the world by using Google Vision and Wikipedia
+                            API. Taking any photo of what you're seeing right now, it can be
+                            sightseeing, celebrity even food and more. The app will feed you the WIKI information.
+                        </div>
+                        <span class="project-used-item">Ionic</span>
+                        <span class="project-used-item">Google vision API</span>
+                        <span class="project-used-item">WIKI API</span>
+                        <span class="project-used-item">Device Camera</span>
+
+                    </figcaption>
+                </div>
+
+                <div class="project-item-with-img">
+                    <figure class="project-figure">
+                        <img class="project-img" src="/img/project/EZpark-demo.png" alt="EZpark-demo">
+
+                    </figure>
+                    <figcaption class="project-figure-caption">
+                        <div class="project-title-row">
+                            <div class="project-name prim-text-color">EZ Park</div>
+                            <div>
+                                <a href="https://github.com/dailiang18bb/EZpark" target="_blank" class="button-code">
+                                    <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub icon</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                    <div class="project-img-button-text">Code</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>An android app which helps users find and share parking spot. The app using Firebase and
+                            Google
+                            Map API. The project follows the Agile Methodology. My role is the developer in the
+                            team.</div>
+                        <span class="project-used-item">Android SDK</span>
+                        <span class="project-used-item">Agile</span>
+                        <span class="project-used-item">qTest</span>
+                        <span class="project-used-item">GoogleMap API</span>
+
+                    </figcaption>
+                </div>
+
+
+
+
+
+
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Personal Website V1</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/dailiang18bb.github.io" target="_blank"
+                                class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>This webpage is my first personal website, design and developed intentionally avoid using any
+                        unnecessary frameworks.
+                    </div>
+                    <span class="project-used-item">Vanilla JavaScript</span>
+                    <span class="project-used-item">HTML</span>
+                    <span class="project-used-item">CSS</span>
+                    <span class="project-used-item">GitHub Pages</span>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">GoNoGo</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/GoNoGo" target="_blank" class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>It's a desktop application that we built at work, it uses to identify and control the assembly
+                        part which the worker put on the production line. The app uses a camera to get the QR code and
+                        process on computer, then sends a signal to the Arduino board to drive a relay to whether
+                        disable or enable the push button on the production line.</div>
+                    <span class="project-used-item">C++</span>
+                    <span class="project-used-item">Arduino</span>
+                    <span class="project-used-item">WinSocket</span>
+
+                </div>
+
+
+
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Bridget Riley Drawing</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/Some-Projects/tree/master/Bridget-Riley-Drawing"
+                                target="_blank" class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                            <a href="https://dailiang18bb.github.io/Some-Projects/Bridget-Riley-Drawing/CanvasWithMotionLiangDai.html"
+                                target="_blank" class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                                </svg>
+                                <div class="project-button-text">Demo</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>A Bridget Riley style drawing web page, Coding in Angular 6, Using native Canvas API. Integrate
+                        with device accelerometer, give the drawing a smooth nature movement, while moving the device.
+                    </div>
+                    <span class="project-used-item">HTML Canvas</span>
+                    <span class="project-used-item">CSS</span>
+                    <span class="project-used-item">TypeScript</span>
+                    <span class="project-used-item">Device Accelerometer</span>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Safe Arrival</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/StopDrunkDriving" target="_blank"
+                                class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div>
+                        An iOS app help to prevent drunk driving. The algorithm based on Horizontal Gaze Nystagmus (HGN)
+                        Test. The app takes a 10s video of user's eye pupil movement and analyzes by math deviation and
+                        TensorFlow CNN model. According to the result, provide options to help user get home safe
+                        without driving.</div>
+                    <span class="project-used-item">iOS SDK</span>
+                    <span class="project-used-item">AVFoundation</span>
+                    <span class="project-used-item">OpenCV</span>
+                    <span class="project-used-item">Tensorflow CNN</span>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Eat Word</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/Some-Projects/tree/master/Eat-Word" target="_blank"
+                                class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                            <a href="https://dailiang18bb.github.io/Some-Projects/Eat-Word/www/" target="_blank"
+                                class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z" />
+                                </svg>
+                                <div class="project-button-text">Demo</div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div>
+                        A English dictionary app with a dark style, using Merriam-Webster Dictionary API. Autoplay the
+                        audio of the word you search.
+                    </div>
+                    <span class="project-used-item">Ionic</span>
+                    <span class="project-used-item">Angular</span>
+                    <span class="project-used-item">SCSS</span>
+                    <span class="project-used-item">Webster Dictionary API</span>
+
+                </div>
+
+
+
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Diabetic Retinopathy Detection</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/Diabetic-Retinopathy-Detection" target="_blank"
+                                class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        This is a project for the Deep Learning course, I solve this Diabetic Retinopathy Detection
+                        Kaggle Challenge by using Tensorflow with Inception-v3 CNN-model, result in 74.8% accuracy.
+                    </div>
+                    <span class="project-used-item">TensorFlow CNN</span>
+                    <span class="project-used-item">Python</span>
+                    <span class="project-used-item">NumPy</span>
+                    <span class="project-used-item">pandas</span>
+
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title-row">
+                        <div class="project-name prim-text-color">Bug Triage</div>
+                        <div>
+                            <a href="https://github.com/dailiang18bb/bug-triage" target="_blank" class="button-code">
+                                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <title>GitHub icon</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                                <div class="project-button-text">Code</div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        This is a project I'm doing with a phD together, dataset use chromium bugs. This app analyzes
+                        user's bug report then assign to the owner. Using Gensim Word2vec build dictionary, use keras
+                        LSTM train the model, result in 34% accuracy, at last use web crawler as baseline to compare.
+                    </div>
+                    <span class="project-used-item">Python</span>
+                    <span class="project-used-item">NLTK</span>
+                    <span class="project-used-item">Word2Vec</span>
+                    <span class="project-used-item">Keras</span>
+                    <span class="project-used-item">BeautifulSoup</span>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <button id="goToTop">
+            <svg class="gototop-img" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z" /></svg>
+        </button>
+
+        <footer class="footer">Developed by Liang Dai @ 2019</footer>
+    </div>
+    <script src="/js/main.js" type="text/javascript" charset="UTF-8"></script>
 </body>
+
+
+
 </html>
+
+
+<!-- 
+    sticky hover use media 
+    top button
+    responsive
+    day & night theme
+    SEO
+    404 page
+ -->
