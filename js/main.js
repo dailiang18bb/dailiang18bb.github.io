@@ -11,7 +11,7 @@ var checkBox;
 
 // When windows loaded, then run
 window.onload = function () {
-    console.log("onload trigger");
+    // console.log("onload trigger");
     body = document.querySelector('body');
     screenHeight = document.getElementById('introSection').offsetHeight;
     goToTopBttn = document.getElementById('goToTop');
@@ -26,8 +26,7 @@ window.onload = function () {
 
 // change Theme
 function changeTheme() {
-    if(this.checked){
-        // console.log('dark');
+    if(checkBox.checked){
         trans();
         greetingWords.innerHTML = 'good evening!';
         document.documentElement.setAttribute('data-theme', 'dark');
