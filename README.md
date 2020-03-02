@@ -1,2 +1,4 @@
 # dailiang18bb.github.io
-My personal website
+Welcome to my personal website @ https://ldai.app
+
+Built with vanilla JS
