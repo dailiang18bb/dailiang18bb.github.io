@@ -762,14 +762,14 @@ section{
 
 @media screen and (max-width: 480px) {
     #goToTop{
-        bottom:8px;
-        right: 8px;
-        width: 20px;
-        height: 20px;
+        bottom: 12px;
+        right: 10px;
+        width: 24px;
+        height: 24px;
     }
 
     .gototop-img{
-        width: 20px;
+        width: 24px;
     }
 }
 
