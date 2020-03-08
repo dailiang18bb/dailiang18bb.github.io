@@ -422,12 +422,16 @@ section{
     outline-style: none;
 }
 
-.intro-icon-hover:hover{
-    -webkit-box-shadow: inset 0 -60px 0 0 var(--main-headings);
-    box-shadow: inset 0 -60px 0 0 var(--main-headings);
-    color: var(--main-icon-code-hover);
-    fill: var(--main-icon-code-hover);
+@media (hover: hover) and (pointer: fine){
+    .intro-icon-hover:hover{
+        -webkit-box-shadow: inset 0 -60px 0 0 var(--main-headings);
+        box-shadow: inset 0 -60px 0 0 var(--main-headings);
+        color: var(--main-icon-code-hover);
+        fill: var(--main-icon-code-hover);
+    }
 }
+
+
 
 
 
@@ -632,12 +636,16 @@ section{
     outline-style: none;
 }
 
-.button-code:hover{
-    -webkit-box-shadow: inset 0 -60px 0 0 var(--main-headings);
-    box-shadow: inset 0 -60px 0 0 var(--main-headings);
-    color: var(--main-icon-code-hover);
-    fill: var(--main-icon-code-hover);
+@media (hover: hover) and (pointer: fine){
+    .button-code:hover{
+        -webkit-box-shadow: inset 0 -60px 0 0 var(--main-headings);
+        box-shadow: inset 0 -60px 0 0 var(--main-headings);
+        color: var(--main-icon-code-hover);
+        fill: var(--main-icon-code-hover);
+    }
 }
+
+
 /*  */
 
 .project-button-text{
@@ -734,10 +742,14 @@ section{
     visibility: visible;
 }
 
-#goToTop:hover{
-    -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+@media (hover: hover) and (pointer: fine){
+    #goToTop:hover{
+        -webkit-box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
 }
+
+
 
 
 
